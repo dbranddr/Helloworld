@@ -3,62 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maritime Gold - Maritime Exploration & Development</title>
-    <meta name="description" content="Leading maritime gold exploration and development company specializing in underwater mining operations and resource discovery.">
+    <title>Maritime Gold - Premium Maritime Services</title>
+    <meta name="description" content="Professional maritime services and exploration. Creating functional and aesthetic marine solutions.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <nav class="nav container">
             <div class="nav-brand">
-                <h1>Maritime Gold</h1>
+                <a href="#home" class="logo">Maritime Gold</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#technology">Technology</a></li>
-                <li><a href="#invest">Invest</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
     <main id="main">
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Everyday Beauty — Maritime</span>
+                    <span class="title-line">Solutions You'll Always Want.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Designing Functional and Aesthetic<br>
+                    Marine Environments.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section id="work" class="featured-work">
             <div class="container">
-                <div class="hero-content">
-                    <h2>Exploring the Depths for Golden Opportunities</h2>
-                    <p>Maritime Gold pioneers underwater gold exploration and development, combining cutting-edge technology with deep-sea expertise to unlock the world's most valuable submerged resources.</p>
-                    <div class="hero-cta">
-                        <a href="#services" class="btn btn-primary">Explore Our Services</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <h2 class="section-label">Featured Work</h2>
+                
+                <div class="work-item">
+                    <div class="work-media">
+                        <div class="work-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-type">Private Expedition</span>
+                            <span class="work-year">2024</span>
+                        </div>
+                        <h3 class="work-title">Ocean Discovery Project</h3>
+                        <p class="work-description">Designing Functional and Aesthetic Marine Environments.</p>
+                        <div class="work-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-view">View</button>
+                        </div>
                     </div>
                 </div>
+
+                <div class="work-item reverse">
+                    <div class="work-media">
+                        <div class="work-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-type">Commercial Fleet</span>
+                            <span class="work-year">2023</span>
+                        </div>
+                        <h3 class="work-title">Deep Sea Operations</h3>
+                        <p class="work-description">Designing Functional and Aesthetic Marine Environments.</p>
+                        <div class="work-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-view">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <div class="work-media">
+                        <div class="work-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    <div class="work-info">
+                        <div class="work-meta">
+                            <span class="work-type">Research Vessel</span>
+                            <span class="work-year">2022</span>
+                        </div>
+                        <h3 class="work-title">Maritime Research Initiative</h3>
+                        <p class="work-description">Designing Functional and Aesthetic Marine Environments.</p>
+                        <div class="work-actions">
+                            <button class="btn-view">View</button>
+                            <button class="btn-view">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <p class="cta-text">Interested in Seeing More Projects?</p>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section about">
+        <section id="about" class="about">
             <div class="container">
-                <h2>Who We Are</h2>
                 <div class="about-content">
-                    <div class="about-text">
-                        <p>Founded on the principle that the ocean's depths hold untapped potential, Maritime Gold brings together marine engineering, geological expertise, and advanced robotics to make underwater gold mining a reality.</p>
-                        <p>Our team of oceanographers, geologists, and engineers work tirelessly to develop sustainable methods for deep-sea resource extraction while protecting marine ecosystems.</p>
+                    <div class="about-intro">
+                        <h2 class="section-title">More Than Just Introduction</h2>
+                        <p class="about-description">
+                            Maritime & marine space design is not just about placing vessels — it's about shaping 
+                            emotion, memory, and rhythm into a living form and connection with the ocean.
+                        </p>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>500+</h3>
-                            <p>Square kilometers explored</p>
+                    
+                    <div class="about-details">
+                        <div class="about-image">
+                            <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                         </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Years combined experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15</h3>
-                            <p>Successful expeditions</p>
+                        <div class="about-text">
+                            <h3 class="about-name">My Name is Maritime Gold</h3>
+                            <p class="about-role">and I'm a maritime solutions designer.</p>
+                            <p class="about-body">
+                                For me, every maritime project, from the moment it's conceived until it reaches 
+                                its final form, needs careful planning and execution. As someone wise once said 
+                                about maritime endeavors: "The ocean is a process."
+                            </p>
+                            <p class="about-body">
+                                Since 2017, designing marine solutions has become both my passion and my profession 
+                                — something I dedicate my time to in order to keep growing and improving.
+                            </p>
+                            <a href="#contact" class="btn-more">More about me</a>
                         </div>
                     </div>
                 </div>
@@ -66,185 +154,283 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="section services">
+        <section id="services" class="services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2 class="section-title">Tailored Offer to Meet Your Needs</h2>
+                <p class="section-subtitle">
+                    From concept to completion, I offer a full range of maritime design services to transform 
+                    marine spaces into beautiful, and functional environments.
+                </p>
+
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>Deep-Sea Exploration</h3>
-                        <p>Advanced sonar mapping and ROV technology to identify gold deposits in underwater environments.</p>
+                        <div class="service-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <h3 class="service-title">Maritime Consultation</h3>
+                        <p class="service-description">
+                            They help quickly validate existing ideas for developing marine spaces or serve as 
+                            a starting point for creating well-matched, thoughtful design solutions tailored to 
+                            the specific needs of the project.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
                     </div>
+
                     <div class="service-card">
-                        <h3>Resource Assessment</h3>
-                        <p>Comprehensive geological surveys and feasibility studies for potential mining sites.</p>
+                        <div class="service-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <h3 class="service-title">Concept for Marine Area Planning</h3>
+                        <p class="service-description">
+                            A functional layout reflecting the style (operations, facilities, routes, structures, etc.) 
+                            with specified vessel types and operational parameters.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
                     </div>
+
                     <div class="service-card">
-                        <h3>Mining Operations</h3>
-                        <p>State-of-the-art underwater mining equipment and extraction techniques.</p>
+                        <div class="service-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <h3 class="service-title">Fleet Composition & Arrangement</h3>
+                        <p class="service-description">
+                            Arrangement of vessels, operations, facilities, routes, etc., as well as indicating 
+                            the types of equipment and capabilities, in order to make the design as functional as possible.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
                     </div>
+
                     <div class="service-card">
-                        <h3>Environmental Monitoring</h3>
-                        <p>Continuous monitoring and protection of marine ecosystems during operations.</p>
+                        <div class="service-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <h3 class="service-title">Concept Plan for Marine Development</h3>
+                        <p class="service-description">
+                            Serves as the primary documentation for implementation. Its exact scope is agreed with 
+                            the client before preparing a proposal for development.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                        <h3 class="service-title">Supervision Over Implementation</h3>
+                        <p class="service-description">
+                            Recommending specialists for sourcing equipment and vessels, supervising on-site 
+                            implementation for design compliance, and maintaining ongoing communication with 
+                            investors and contractors.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"></div>
+                        <h3 class="service-title">Maritime Workshops</h3>
+                        <p class="service-description">
+                            Conducting workshops in the form of training events, joint operational activities, 
+                            or educational tours for organized groups or open community events.
+                        </p>
+                        <a href="#contact" class="service-link">MORE</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technology Section -->
-        <section id="technology" class="section technology">
+        <!-- Range Section -->
+        <section class="range">
             <div class="container">
-                <h2>Advanced Technology</h2>
-                <p>Our proprietary visual editor and drag-and-drop interface revolutionizes how we plan and execute underwater operations.</p>
-                <div class="tech-demo">
-                    <article class="grid-cur border-theme-border-02 mb-v3 gap-y-0">
-                        <div class="col-pan-full grid grid-col-subgrid col-pan-full md:col-start-1 md:col-end-19 lg:col-start-1 lg:col-end-17 xl:col-start-7 xl:col-end-19">
-                            <div class="prose prose--block prose--blog col-pan-full">
-                                <p data-cursor-element-id="cursor-el-174">Our visual editor lets you manipulate site layouts and structures directly by dragging and dropping rendered elements across the DOM tree. This innovative approach enables precise planning of underwater mining operations with real-time visualization.</p>
-                            </div>
-                        </div>
-                    </article>
+                <h2 class="section-title">Range of Maritime Types and Operations</h2>
+                <p class="section-subtitle">
+                    Support a wide range of maritime types and operations, tailored to every need, style, 
+                    and setting — from intimate private vessels to expansive commercial fleets.
+                </p>
+
+                <div class="range-grid">
+                    <div class="range-item">
+                        <div class="range-number">(01)</div>
+                        <div class="range-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <h3 class="range-title">Private Residential Vessels</h3>
+                        <p class="range-description">
+                            Maritime spaces designed for individual use, offering privacy, beauty, and a personal 
+                            connection with the ocean.
+                        </p>
+                    </div>
+
+                    <div class="range-item">
+                        <div class="range-number">(02)</div>
+                        <div class="range-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <h3 class="range-title">Commercial Fleet Projects</h3>
+                        <p class="range-description">
+                            Maritime operations created as part of commercial or industrial developments, 
+                            enhancing value and operational efficiency.
+                        </p>
+                    </div>
+
+                    <div class="range-item">
+                        <div class="range-number">(03)</div>
+                        <div class="range-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <h3 class="range-title">Public Marine Spaces</h3>
+                        <p class="range-description">
+                            Accessible maritime areas that provide recreation, transportation, and ecological 
+                            benefits for the wider community.
+                        </p>
+                    </div>
+
+                    <div class="range-item">
+                        <div class="range-number">(04)</div>
+                        <div class="range-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                        <h3 class="range-title">Research & Educational Initiatives</h3>
+                        <p class="range-description">
+                            Maritime projects developed for educational, scientific, or community-driven purposes, 
+                            fostering engagement and learning.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Investment Section -->
-        <section id="invest" class="section invest">
+        <!-- Process Section -->
+        <section class="process">
             <div class="container">
-                <h2>Invest in Maritime Gold</h2>
-                <div class="invest-content">
-                    <div class="invest-intro">
-                        <p>Join us in revolutionizing the underwater mining industry. Maritime Gold offers unique investment opportunities for those looking to capitalize on the growing demand for precious metals and sustainable resource extraction.</p>
-                        <p>Our proven track record, cutting-edge technology, and strategic partnerships make Maritime Gold a compelling investment in the future of deep-sea resource development.</p>
+                <h2 class="section-title">Simple and Clean Work Process</h2>
+                <p class="section-subtitle">
+                    Maritime design is an exciting journey — and the process, consisting of six key steps, 
+                    has been created to provide you with full support.
+                </p>
+
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">(01)</div>
+                        <h3 class="step-title">Initial Contact and Needs Assessment</h3>
+                        <p class="step-description">
+                            The client gets in touch (by phone, form, or visit), and I gather basic information 
+                            about the project and prepare an offer.
+                        </p>
                     </div>
 
-                    <div class="investment-options">
-                        <div class="investment-card">
-                            <h3>Public Stock Offering</h3>
-                            <p>Invest in Maritime Gold through our publicly traded shares on major exchanges. Join thousands of investors who believe in our vision for sustainable underwater mining.</p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <strong>Symbol:</strong> MTG
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Exchange:</strong> NYSE
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Market Cap:</strong> $2.4B
-                                </div>
-                            </div>
-                            <a href="#contact" class="btn btn-primary">Contact Broker</a>
-                        </div>
-
-                        <div class="investment-card">
-                            <h3>Private Partnerships</h3>
-                            <p>Partner with us directly through private investment opportunities. Ideal for institutional investors seeking substantial equity positions in high-growth ventures.</p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <strong>Minimum:</strong> $500K
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Type:</strong> Equity/Debt
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Term:</strong> 5-10 years
-                                </div>
-                            </div>
-                            <a href="#contact" class="btn btn-primary">Learn More</a>
-                        </div>
-
-                        <div class="investment-card">
-                            <h3>Strategic Alliances</h3>
-                            <p>Collaborate with Maritime Gold through strategic partnerships, joint ventures, and co-investment opportunities in specific underwater mining projects.</p>
-                            <div class="investment-details">
-                                <div class="detail-item">
-                                    <strong>Focus:</strong> Technology & Operations
-                                </div>
-                                <div class="detail-item">
-                                    <strong>ROI Potential:</strong> High
-                                </div>
-                                <div class="detail-item">
-                                    <strong>Risk Level:</strong> Moderate
-                                </div>
-                            </div>
-                            <a href="#contact" class="btn btn-primary">Partner With Us</a>
-                        </div>
+                    <div class="process-step">
+                        <div class="step-number">(02)</div>
+                        <h3 class="step-title">Detailed Consultation and Site Survey</h3>
+                        <p class="step-description">
+                            After the offer and first payment, I visit the site and consult with the client to 
+                            understand their preferences and maritime project expectations.
+                        </p>
                     </div>
 
-                    <div class="investment-highlights">
-                        <div class="highlight">
-                            <h4>Market Leadership</h4>
-                            <p>Pioneer in deep-sea gold extraction technology with 15+ successful expeditions.</p>
-                        </div>
-                        <div class="highlight">
-                            <h4>Strong Financials</h4>
-                            <p>$2.4B market capitalization with consistent revenue growth and profitability.</p>
-                        </div>
-                        <div class="highlight">
-                            <h4>Sustainable Practices</h4>
-                            <p>Committed to environmental stewardship and marine ecosystem protection.</p>
-                        </div>
-                        <div class="highlight">
-                            <h4>Innovation Focus</h4>
-                            <p>Continuous investment in R&D with proprietary underwater mining technology.</p>
-                        </div>
+                    <div class="process-step">
+                        <div class="step-number">(03)</div>
+                        <h3 class="step-title">Concept Creation and Approval</h3>
+                        <p class="step-description">
+                            I create up to three concept plans, refine the chosen one with the client, and proceed 
+                            with the second payment upon approval.
+                        </p>
                     </div>
 
-                    <div class="invest-cta">
-                        <h3>Ready to Invest?</h3>
-                        <p>Contact our investment team to discuss your options and learn more about how you can be part of the Maritime Gold success story.</p>
-                        <div class="cta-buttons">
-                            <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
-                            <a href="mailto:investors@maritimegold.com" class="btn btn-secondary">Email Investors</a>
-                        </div>
+                    <div class="process-step">
+                        <div class="step-number">(04)</div>
+                        <h3 class="step-title">Equipment and Material Selection</h3>
+                        <p class="step-description">
+                            Detailed list of proposed equipment, vessels, and materials, present it to the client, 
+                            and incorporate their feedback.
+                        </p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">(05)</div>
+                        <h3 class="step-title">Visualizations and Final Adjustments</h3>
+                        <p class="step-description">
+                            Project visualizations to help the client envision the maritime solution, then make 
+                            final adjustments after review.
+                        </p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">(06)</div>
+                        <h3 class="step-title">Documentation Handover</h3>
+                        <p class="step-description">
+                            You finalize the complete conceptual maritime documentation. After handing it over, 
+                            the final payment is made.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section class="clients">
+            <div class="container">
+                <h2 class="section-title">My Featured Clients</h2>
+                <p class="section-subtitle">
+                    Trusted by clients who value exceptional design — explore some of the brands and individuals 
+                    I've had the pleasure to work with.
+                </p>
+
+                <div class="clients-grid">
+                    <div class="client-item">
+                        <div class="client-logo">Ocean Partners</div>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-logo">Marine Solutions Inc.</div>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-logo">Deep Blue Ventures</div>
+                    </div>
+                    <div class="client-item">
+                        <div class="client-logo">Coastal Enterprises</div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section contact">
+        <section id="contact" class="contact">
             <div class="container">
-                <h2>Contact Us</h2>
+                <h2 class="section-title">Let's Design Your Maritime Solution Together</h2>
+                
                 <div class="contact-content">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">Send Inquiry</button>
+                        </form>
+                    </div>
+
                     <div class="contact-info">
                         <div class="contact-item">
-                            <h3>Headquarters</h3>
-                            <p>123 Ocean Drive<br>San Francisco, CA 94105</p>
+                            <a href="mailto:hello@maritimegold.com" class="contact-link">hello@maritimegold.com</a>
                         </div>
                         <div class="contact-item">
-                            <h3>Email</h3>
-                            <p>info@maritimegold.com</p>
+                            <a href="tel:+15551234567" class="contact-link">+1 (555) 123-4567</a>
                         </div>
                         <div class="contact-item">
-                            <h3>Phone</h3>
-                            <p>+1 (555) 123-4567</p>
+                            <p class="contact-address">
+                                123 Ocean Drive, Suite 100<br>
+                                94105 San Francisco, CA
+                            </p>
                         </div>
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Maritime Gold. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Maritime Gold<br>Designed with precision</p>
+                </div>
+            </div>
         </div>
     </footer>
 
